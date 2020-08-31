@@ -1,0 +1,49 @@
+{% extends 'base_user_connected.html.twig' %}
+
+{% block title %}{{ 'user.index.list.pageTitle' | trans }}{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <h2>{{ 'user.index.list.title' | trans }}</h2>
+        <a href="{{ path('user_add') }}" class="btn btn-secondary">{{ 'user.index.add' | trans }}</a>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>{{ 'user.index.column.lastname' | trans }}</th>
+                <th>{{ 'user.index.column.firstname' | trans }}</th>
+                <th>{{ 'user.index.column.email' | trans }}</th>
+                <th>{{ 'user.index.column.sector' | trans }}</th>
+                <th>{{ 'user.index.column.actions' | trans }}</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            {% for user in users %}
+                <tr
+                        {% if user.sector == 'Recrutement' %}
+                            class="table-primary"
+                        {% elseif user.sector == 'Informatique' %}
+                            class="table-success"
+                        {% elseif user.sector == 'Comptabilité' %}
+                            class="table-warning"
+                        {% elseif user.sector == 'Direction' %}
+                            class="table-danger"
+                        {% endif %}
+                >
+                    <td>{{ user.lastname }}</td>
+                    <td>{{ user.firstname }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.sector }}</td>
+                    <td>
+                        <a href="{{ path('user_show', {'user' : user.id}) }}"
+                           class="btn btn-secondary">{{ 'user.index.action.show' | trans }}</a>
+                        {% if app.user.id != user.id %}
+                        <a href="{{ path('user_delete', {'user' : user.id}) }}" class="btn btn-secondary">{{ 'user.index.action.delete' | trans }}</a>
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

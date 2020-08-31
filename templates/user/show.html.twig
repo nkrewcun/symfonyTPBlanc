@@ -1,0 +1,36 @@
+{% extends 'base_user_connected.html.twig' %}
+
+{% block title %}{{ 'user.detail.pageTitle' | trans }}{% endblock %}
+
+{% block body %}
+    <div class="container card-container
+        {% if user.sector == 'Recrutement' %}
+                            bg-primary
+                      {% elseif user.sector == 'Informatique' %}
+                            bg-success
+                        {% elseif user.sector == 'Comptabilité' %}
+                            bg-warning
+                        {% elseif user.sector == 'Direction' %}
+                            bg-danger
+                        {% endif %}
+    ">
+    <div class="card mb-3">
+        <img src="{{ asset('assets/pictures/' ~ user.picture) }}" class="card-img-top"
+             alt="{{ user.firstname }} {{ user.lastname }}">
+        <div class="card-body">
+            <h5 class="card-title display-4">{{ user.firstname }} {{ user.lastname }}</h5>
+            <p class="card-text">{{ user.email }}</p>
+            <p class="card-text">{{ user.sector }}</p>
+            <div class="actionButtons">
+                <div class="leftButtons">
+                    <a href="{{ path('users') }}" class="btn btn-secondary">{{ 'user.detail.getBack' | trans }}</a>
+                    {% if app.user.id != user.id %}
+                        <a href="{{ path('user_delete', {'user' : user.id}) }}"
+                           class="btn btn-secondary">{{ 'user.detail.delete' | trans }}</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+{% endblock %}

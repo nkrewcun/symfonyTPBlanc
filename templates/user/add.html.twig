@@ -1,0 +1,48 @@
+{% extends 'base_user_connected.html.twig' %}
+
+{% block title %}{{ 'form.add.employee.pageTitle' | trans }}{% endblock %}
+
+{% block body %}
+    {% for flashError in app.flashes('verify_email_error') %}
+        <div class="alert alert-danger" role="alert">{{ flashError }}</div>
+    {% endfor %}
+    <div class="container">
+        <h1>{{'form.add.employee.title' | trans }}</h1>
+
+        {{ form_start(form) }}
+        <div class="form-group">
+            {{ form_label(form.firstname) }}
+            {{ form_widget(form.firstname) }}
+            {{ form_errors(form.firstname) }}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.lastname) }}
+            {{ form_widget(form.lastname) }}
+            {{ form_errors(form.lastname) }}
+        </div>
+
+        <div class="form-group">
+            {{ form_label(form.email) }}
+            {{ form_widget(form.email) }}
+            {{ form_errors(form.email) }}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.plainPassword) }}
+            {{ form_widget(form.plainPassword) }}
+            {{ form_errors(form.plainPassword) }}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.sector) }}
+            {{ form_widget(form.sector) }}
+            {{ form_errors(form.sector) }}
+        </div>
+        <div class="form-group">
+            {{ form_label(form.picture) }}
+            {{ form_widget(form.picture) }}
+            {{ form_errors(form.picture) }}
+        </div>
+        {{ form_widget(form.submit) }}
+        <a href="{{ path('users') }}" class="btn btn-secondary">{{ 'form.add.employee.goBack' | trans }}</a>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

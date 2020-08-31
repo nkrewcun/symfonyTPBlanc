@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="3_vUzLP" resname="index.title">
+        <source>index.title</source>
+        <target>Bienvenue chez Deloitte</target>
+      </trans-unit>
+      <trans-unit id="0umDnnC" resname="navbar.home">
+        <source>navbar.home</source>
+        <target>Accueil</target>
+      </trans-unit>
+      <trans-unit id="1EJ29Mg" resname="navbar.employees.list">
+        <source>navbar.employees.list</source>
+        <target>Liste des employés</target>
+      </trans-unit>
+      <trans-unit id="Xp74OaP" resname="navbar.employees.add">
+        <source>navbar.employees.add</source>
+        <target>Ajouter un employé</target>
+      </trans-unit>
+      <trans-unit id="t8oQeWx" resname="navbar.logout">
+        <source>navbar.logout</source>
+        <target>Se déconnecter</target>
+      </trans-unit>
+      <trans-unit id="l669s9P" resname="form.login.pageTitle">
+        <source>form.login.pageTitle</source>
+        <target>Se connecter</target>
+      </trans-unit>
+      <trans-unit id="gXC4W8F" resname="form.login.email">
+        <source>form.login.email</source>
+        <target>E-mail</target>
+      </trans-unit>
+      <trans-unit id="U5gH4T4" resname="form.login.password">
+        <source>form.login.password</source>
+        <target>Mot de passe</target>
+      </trans-unit>
+      <trans-unit id="K3sE3RT" resname="form.login.submit">
+        <source>form.login.submit</source>
+        <target>Se connecter</target>
+      </trans-unit>
+      <trans-unit id="JBVr_.i" resname="form.add.employee.pageTitle">
+        <source>form.add.employee.pageTitle</source>
+        <target>Ajouter un employé - Deloitte</target>
+      </trans-unit>
+      <trans-unit id="dn9bGvf" resname="form.add.employee.title">
+        <source>form.add.employee.title</source>
+        <target>Ajouter un employé</target>
+      </trans-unit>
+      <trans-unit id="oreVWrR" resname="user.index.list.pageTitle">
+        <source>user.index.list.pageTitle</source>
+        <target>Liste des employés - Deloitte</target>
+      </trans-unit>
+      <trans-unit id="5XSppSK" resname="user.index.list.title">
+        <source>user.index.list.title</source>
+        <target>Liste des employés</target>
+      </trans-unit>
+      <trans-unit id="rsAH8u." resname="user.index.add">
+        <source>user.index.add</source>
+        <target>Ajouter un employé</target>
+      </trans-unit>
+      <trans-unit id=".X7lcEJ" resname="user.index.column.lastname">
+        <source>user.index.column.lastname</source>
+        <target>Nom</target>
+      </trans-unit>
+      <trans-unit id="Z_6vUS3" resname="user.index.column.firstname">
+        <source>user.index.column.firstname</source>
+        <target>Prénom</target>
+      </trans-unit>
+      <trans-unit id="MLHpGf." resname="user.index.column.email">
+        <source>user.index.column.email</source>
+        <target>E-mail</target>
+      </trans-unit>
+      <trans-unit id="OXgZhZD" resname="user.index.column.sector">
+        <source>user.index.column.sector</source>
+        <target>Secteur</target>
+      </trans-unit>
+      <trans-unit id="nkzB9Cv" resname="user.index.column.actions">
+        <source>user.index.column.actions</source>
+        <target>Actions</target>
+      </trans-unit>
+      <trans-unit id="7_UmUZJ" resname="user.index.action.show">
+        <source>user.index.action.show</source>
+        <target>Détails</target>
+      </trans-unit>
+      <trans-unit id="YdmEs38" resname="user.index.action.delete">
+        <source>user.index.action.delete</source>
+        <target>Supprimer</target>
+      </trans-unit>
+      <trans-unit id="BulpyFu" resname="user.detail.pageTitle">
+        <source>user.detail.pageTitle</source>
+        <target>Détail employé - Deloitte</target>
+      </trans-unit>
+      <trans-unit id="Wp7KRSs" resname="user.detail.getBack">
+        <source>user.detail.getBack</source>
+        <target>Retour</target>
+      </trans-unit>
+      <trans-unit id="uEIszKS" resname="user.detail.delete">
+        <source>user.detail.delete</source>
+        <target>Supprimer</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

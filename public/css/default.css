@@ -1,0 +1,16 @@
+html,
+body {
+    height: 90%;
+    background-color: #fff;
+}
+
+.cover-container {
+    max-width: 42em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-container {
+    max-width: 42rem;
+}
